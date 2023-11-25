@@ -1,4 +1,9 @@
-# Fluidd
+# Fluidd - my fork
+
+## Changes
+
+- add webrtc-go2rtc support
+- ui chaneges for centering tool controls
 
 Fluidd is a free and open-source Klipper web interface for managing your 3d printer.
 
