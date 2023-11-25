@@ -72,7 +72,7 @@ jobs:
             type=semver,pattern={{raw}}
             type=ref,event=pr
             type=sha,format=long
-            type=raw,value=latest-my_develop,enable=${{ github.ref == 'refs/heads/my_develop' }}
+            type=raw,value=vj-latest,enable=${{ github.ref == 'refs/heads/my_develop' }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
