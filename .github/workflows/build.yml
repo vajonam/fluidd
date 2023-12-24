@@ -5,6 +5,7 @@ on:
     branches:
       - develop
       - master
+      - my_develop
     tags:
       - 'v*'
   pull_request:
@@ -79,6 +80,7 @@ jobs:
             type=sha,format=long
             type=raw,value=latest-develop,enable=${{ github.ref == 'refs/heads/develop' }}
             type=raw,value=latest-master,enable=${{ github.ref == 'refs/heads/master' }}
+            type=raw,value=latest-my_develop,enable=${{ github.ref == 'refs/heads/my_develop' }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
